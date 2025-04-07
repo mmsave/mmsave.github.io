@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="max-image-preview:large">
+
+    <!-- <title>{{page.title}} | {{site.name}}</title> -->
+    <!--In the site <head>, add the loader code once-->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+
+    {% seo %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+
+    <!-- Bootstrap Modified -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+
+    <!-- Theme Stylesheet -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
+
+    <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    {% include tracking-header.html %}
+
+    <meta name="google-site-verification" content="vVe4ixDeFH2FgdybV6Kgr7Ty6Axk8CppxtImruAp7oY" />
+    <meta name="msvalidate.01" content="D949E2F107551F710F1D7CCF92BE9E7E" />
+    <meta name="yandex-verification" content="18f739fd8f68942b" />
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(99202577, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/99202577" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CFQBDFSDS"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0CFQBDFSDS');
+    </script>
+    <!-- seznam -->
+    <meta name="seznam-wmt" content="ppOOZqPkbHR914Kc7EYaCoB3bPQqauT6" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2784742237479601"
+     crossorigin="anonymous"></script>
+
+     <!-- Microsoft Clarity -->
+      <!-- Clarity tracking code for https://ecommercemart.github.io/ --><script>    (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "pt5sknz7ve");</script>
+
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+        appId: "b8d79573-b617-4f5c-8fc6-f66cc9052433",
+        });
+    });
+    </script>
+    <meta name='impact-site-verification' value='50a9cd33-b3e1-435a-af3b-f2f3f7140a6b'>
+<!-- Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2784742237479601"
+    crossorigin="anonymous"></script>
+    {% if page.url == "/" %}
+    <script src="
+https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css
+" rel="stylesheet">
+
+{% endif %}
+{% if page.url == "/Shopify-Theme-Detector" %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endif %}
+
+</head>
+
+<body class="{% if page.url == "/" %} homefirstpage {% endif %}">
+
+    <!-- Navbar -->
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/"><strong>{{site.name}}</strong></a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               {% include menu-header.html %}
+            </ul>
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
+                {% include search-lunr.html %}
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <!--AdFox START-->
+    <!--yandex_sushil.mohan@mail.ru-->
+    <!--Placement: Ecommerce Mart / * / *-->
+    <!--Banner type: 100%x100% Turbo-->
+    <!--Position: top of the page-->
+    <!-- Search Results -->
+    <div id="lunrsearchresults">
+        <ul class="mb-0"></ul>
+    </div>
+
+    <!-- Content -->
+    <main role="main" class="site-content">
+        <div class="side-bar-left-ads" bis_skin_checked="1">
+            <div class="side-bar-left-buttons" bis_skin_checked="1">
+                            <!-- Verticle Ads Sidebar -->
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-2784742237479601"
+            data-ad-slot="3326963965"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+                   <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+                   </script>
+                <!-- <a href="/Ecommerce-Profit-Margin-Calculator" class="heart btn btn-success mt-2">Ecommerce Profit Margin Calculator</a>
+                <a href="/Ecommerce-Ad-Budget-Calculator" class="heart btn btn-success mt-2">Ecommerce Ad Budget Calculator</a>
+                <a href="/Shopify-Theme-Detector" class="heart btn btn-success mt-2">Shopify Theme Detector</a> -->
+                <!-- <a href="/Product-Price-Comparison-Tool" class="heart btn btn-success mt-2">Product Price Comparison Tool</a>
+                <a href="/AI-Powered-Product-Name-and-Description-Generator" class="heart btn btn-success mt-2">AI Product Name Generator</a> -->
+
+                <!-- <a href="/Payment-Gateway-Fee-Calculator" class="heart btn btn-success mt-2">Payment Gateway Fee Calculator</a> -->
+            </div>
+        </div>
+        <div class="side-bar-right-ads">
+            <!-- Verticle Ads Sidebar -->
+            <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2784742237479601"
+     data-ad-slot="3326963965"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        {{ content }}
+    </main>
+
+
+    <!-- Scripts: popper, bootstrap, theme, lunr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <script src="{{site.baseurl}}/assets/js/theme.js"></script>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div>
+                    <span class="navbar-brand mr-2 mb-0"><strong>Ecommerce Mart</strong></span>
+                    <span>Copyright © <script>document.write(new Date().getFullYear())</script>.</span>
+                </div>
+                <!-- <div>
+                    <form action="https://github.us22.list-manage.com/subscribe/post?u=7cbb8f4ffba4384950451d221&amp;id=aae56f1824&amp;f_id=00d2c2e1f0" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate w-100" target="_blank" novalidate>
+                        <div class="mc-field-group">
+                            <input type="email" placeholder="Enter e-mail address" name="EMAIL" class="required email form-control w-100" id="mce-EMAIL" autocomplete="on" required> 
+                            <button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-success btn-inline-block w-100 mt-2">Subscribe</button>
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+            <br>
+            <div class="row align-items-center justify-content-between">
+                <a href="/about-us">About US</a>
+                <a href="/contact-us">Contact US</a>
+                <a href="/privacy-policy">Privacy Policies</a>
+                <a href="/disclaimer">Disclaimer</a>
+                <a href="/affiliate">Affiliate Policy</a>
+                <a href="/terms-of-service">Terms of Service</a>
+                <a href="/sitemap.xml">Site Map</a>
+
+            </div>
+        </div>
+    </footer>
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper"}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+    {% include tracking-footer.html %}
+
+</body>
+
+</html>

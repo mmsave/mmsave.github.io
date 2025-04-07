@@ -1,0 +1,53 @@
+# Site
+name: 'Ecommerce Mart'
+description: 'Find blogs of Ecommerce development with GitHub.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+disqus: 'demowebsite'
+email: 'codingrhodes@gmail.com'
+mailchimp-list: 'https://github.us22.list-manage.com/subscribe/post?u=7cbb8f4ffba4384950451d221&amp;id=aae56f1824&amp;f_id=00d2c2e1f0'
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    CodingRhodes:
+      name:           Coding Rhodes
+      site:           /
+      avatar:         assets/images/Author-codingRhodes.webp
+      bio:            "Hi, I am Coding Rhodes, the author of this article, Do let me know If you have any Questions"
+      email:          CodingRhodes@gmail.com
+      twitter:        https://x.com/CodingRhodes
+ 
+# Defaults
+defaults:
+
+  # all posts
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+# sitemap
+gems:
+      - jekyll-sitemap
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]

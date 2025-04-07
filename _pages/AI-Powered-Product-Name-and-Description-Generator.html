@@ -1,0 +1,104 @@
+---
+title: "AI-Powered Product Name & Description Generator"
+layout: page-sidebar
+permalink: "/AI-Powered-Product-Name-and-Description-Generator"
+description: "Generate catchy product names and descriptions using AI. Enter keywords, choose a product category, and select a tone to get instant AI-generated results."
+---
+
+<style>
+    .generator-tool {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    .generator-tool h2, .faq-section h2 {
+        text-align: center;
+    }
+    .input-group {
+        margin-bottom: 10px;
+    }
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .input-group input, .input-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+ 
+    .results {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+<div class="generator-tool">
+    <div class="input-group">
+        <label for="keywords">Keywords</label>
+        <input type="text" id="keywords" placeholder="Enter keywords">
+    </div>
+    <div class="input-group">
+        <label for="category">Product Category</label>
+        <input type="text" id="category" placeholder="Enter product category">
+    </div>
+    <div class="input-group">
+        <label for="tone">Tone</label>
+        <select id="tone">
+            <option value="professional">Professional</option>
+            <option value="playful">Playful</option>
+            <option value="luxury">Luxury</option>
+        </select>
+    </div>
+    <button onclick="generateAIProductInfo()">Generate</button>
+    <div class="results" id="results"></div>
+</div>
+<br>
+<hr>
+
+<div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3 class="faq-question">How does the AI Product Name & Description Generator work?</h3>
+        <p class="faq-answer">You provide keywords, a product category, and a preferred tone, and the AI generates an engaging product name and description.</p>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question">Is this tool free to use?</h3>
+        <p class="faq-answer">Yes, our AI-powered generator is completely free to use.</p>
+    </div>
+    <div class="faq-item">
+        <h3 class="faq-question">Can I use the generated descriptions for my ecommerce store?</h3>
+        <p class="faq-answer">Absolutely! The AI-generated product names and descriptions can be used for your online store, marketing, and branding.</p>
+    </div>
+</div>
+
+<script>
+    function generateAIProductInfo() {
+        let keywords = document.getElementById("keywords").value;
+        let category = document.getElementById("category").value;
+        let tone = document.getElementById("tone").value;
+        
+        if (!keywords || !category) {
+            document.getElementById("results").innerHTML = "Please enter all required fields.";
+            return;
+        }
+        
+        let productName = `${keywords} - The Ultimate ${category}`;
+        let description = `This ${category.toLowerCase()} is designed to meet your needs. Featuring high-quality materials and an innovative design, this product is perfect for those looking for ${tone} style.`;
+        
+        document.getElementById("results").innerHTML = `<strong>Product Name:</strong> ${productName}<br><strong>Description:</strong> ${description}`;
+    }
+</script>
